@@ -52,6 +52,7 @@ variant helps with macros with exotic names.
 %doc %{_texmfdistdir}/doc/latex/show2e/show2e.pdf
 #- source
 %doc %{_texmfdistdir}/source/latex/show2e/show2e.dtx
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -62,3 +63,5 @@ variant helps with macros with exotic names.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
