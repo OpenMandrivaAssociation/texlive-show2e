@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-show2e
 Version:	1.0
-Release:	3
+Release:	4
 Summary:	Variants of \show for LaTeX2e
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/show2e
